@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+	.MyClass{
+		font-style:none;
+		color:red;
+	}
+	.newClass{
+		font-style: italic;
+		color:blue;
+	}
+</style>
+<script src="script/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<p class="MyClass">bibibibibibibi</p>
+<script>
+	$(function(){
+		// $("p").removeClass("newClass")
+		// $("p").removeClass("MyClass newClass");
+		// $("p").removeClass();//等价于上面的代码
+		// $("p").toggleClass("newClass");
+		$("p").click(function(){
+			$("p").is(".MyClass");
+		});
+	})
+</script>
+
+</body>
+</html>

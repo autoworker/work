@@ -1,4 +1,4 @@
-1.css概述
+﻿1.css概述
 	移动设备优先
 		<meta name="viewport" content="width=device-width, initial-scale=1.0， maximum-scale=1.0，user-scalable=no ">
 		maximum-scale=1.0 与 user-scalable=no 一起使用。这样禁用缩放功能后，用户只能滚动屏幕，就能让您的网站看上去更像原生应用的感觉
@@ -122,4 +122,4 @@
 			输入框（Input）包括：text、password、datetime、datetime-local、date、month、time、week、number、email、url、search、tel 和 color。
 			文本框（Textarea）则可以使用文本框 textarea。必要时可以改变 rows 属性
 			复选框（Checkbox）和单选框（Radio）对一系列复选框和单选框使用 .checkbox-inline 或 .radio-inline class，控制它们显示在同一行上。
-			选择框（Select）
+			选择框

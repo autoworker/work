@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script src="script/jquery-3.1.1.js"></script>
+<script>
+	$(function(){
+		// var $body=$("body").children();
+		// var $p=$("p").children();
+		// var $ul=$("ul").children();
+		// alert($body.length);
+		// alert($p.length)
+		// alert($ul.length);
+		// for(var i=0;i<$ul.length;i++){
+		// 	alert($ul[i].innerHTML)
+		// }
+		// console.log($("p").next());
+		// console.log($("ul").prev());
+		// $("ul li.first").siblings().css({"background":"red"});
+		// $(".first > a").click(function(){
+		// 	$(this).addClass("current")
+		// 	.next().show()
+		// 	.parent().siblings().children("a").removeClass("current")
+		// 	.next().hide();
+		// 	return false;
+		// });
+		$(document).bind("click",function(e){
+			$(e.target).closest("p").css("background","pink")
+		})		
+	})
+</script>
+</head>
+<body>
+	<p>1</p>
+	<ul>
+		<li class="first"><a href="#">X</a><p >11111</p></li>
+		<li class="two"><a href="#">X</a><p >11111</p></li>
+		<li><a href="#">X</a><p >11111</p></li>
+	</ul>
+</body>
+
+</html>

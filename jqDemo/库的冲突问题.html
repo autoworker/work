@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='script/prototype.js'></script>
+	<script src='script/jquery-3.1.1.js'></script>
+</head>
+<body>
+	<p id="pp">Test-prototype</p>
+	<p>Text-jQuery</p>
+</body>
+<script>
+	// jQuery.noConflict();
+	// jQuery(function(){
+	// 	jQuery("p").click(function(){
+	// 		alert(jQuery(this).text());
+	// 	});
+	// });
+	// var jq=jQuery.noConflict();
+	// jq(function(){
+	// 	jq("p").click(function(){
+	// 		alert(jq(this).text());
+	// 	});
+	// });
+	// jQuery.noConflict();
+	// jQuery(function($){
+	// 	$("p").click(function(){
+	// 		alert($(this).text());
+	// 	});
+	// });
+	jQuery.noConflict();
+	(function($){
+		$(function(){
+			$("p").click(function(){
+				alert($(this).text());
+			});
+		});
+	})(jQuery);
+	$("pp").style.display='none';
+</script>
+</html>

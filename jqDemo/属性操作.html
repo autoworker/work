@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="script/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<p title="love fang"></p>
+	<script>
+		// 获取属性
+		$(function(){
+			var $para=$("p");
+			var p_txt=$para.attr("title");
+			alert(p_txt);
+		})
+		// 类似属性html(),val(),height(),width(),text(),css(),attr();
+		// 设置属性
+		$(function(){
+			// 一个属性
+			// $("p").attr("title","My Love");
+			// 多个属性用json
+			$("p").attr({"title":"My Love","alt":"fang"})
+		})
+	</script>
+</body>
+</html>

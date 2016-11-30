@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Document</title>
+ 	<script src='script/jquery-3.1.1.js'></script>
+ </head>
+ <body>
+ 	<ul class="ul">
+ 		<li>111111111111111111</li>
+ 		<li>222222222222222222</li>
+ 	</ul>
+ 	<p title="你最喜欢的水果">你最喜欢的水果?</p>
+ 	<strong>bliblibli</strong>
+ 	<strong>bliblibli</strong>
+ <script>
+ 	$(function(){
+ 		
+ 		$("ul li").click(function(){
+ 			$(this).clone(true).appendTo('ul');
+ 		});
+
+ 		$("p").click(function(){
+ 			// replaceWith与replaceAll的区别；
+ 			// $(this).replaceWith("<strong>你最不喜欢的水果</strong>");
+ 			// $("<strong>你最不喜欢的水果</strong>").replaceAll("p");
+ 		});
+ 		// wrap(),wrapAll(),wrapinner()
+
+ 		// $("strong").wrap("<b></b>");
+ 		// $("strong").wrapAll("<b></b>");
+ 		// $("strong").wrapInner("<b></b>");
+	})
+ </script>
+ </body>
+ </html>

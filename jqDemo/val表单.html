@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="script/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<select name="" id="single">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+	<select name="" id="multiple" multiple="multiple" style="height: 200px;">
+		<option selected="selected">11</option>
+		<option>22</option>
+		<option>33</option>
+		<option selected="selected">44</option>
+	</select>
+	<input type="checkbox" value="check1">d1
+	<input type="checkbox" value="check2">d2
+	<input type="checkbox" value="check3">d3
+	<input type="checkbox" value="check4">d4
+	<input type="radio" value="radio1">单1
+	<input type="radio" value="radio2">单2
+	<input type="radio" value="radio3">单3
+<script>
+	$(function(){
+		// $("#single").val(["3"]);
+		// $("#multiple").val(["22","33"]);
+		//  $("input:checkbox").val(["check1"]);
+		$("input:radio").val(["radio1","radio2"]);
+	})
+</script>
+</body>
+</html>

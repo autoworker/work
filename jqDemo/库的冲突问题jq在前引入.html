@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='script/jquery-3.1.1.js'></script>
+	<script src='script/prototype.js'></script>
+</head>
+<body>
+	<p id="pp">Test-prototype</p>
+	<p>Text-jQuery</p>
+</body>
+<script>
+	jQuery("p").click(function(){
+		alert(jQuery(this).text());
+	});
+	$("pp").style.display='none';
+</script>
+</html>

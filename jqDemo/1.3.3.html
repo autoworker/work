@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		li{list-style: none;}
+		a{text-decoration: none;}
+		.menu{width: 125px;}
+		.level1{ width:125px;border:1px solid #000;  text-align: center;}
+		.level1 a{height: 30px;line-height: 30px;border: 1px solid #000;display: block;}
+		.level2{display: none;}
+		.current{background: #f90;}
+	</style>
+	<script src="script/jquery-3.1.1.js"></script>
+	<script>
+		// $(function(){
+		// 	$('.level1>a').click(function(){
+		// 		$(this).addClass("current").next().show().parent().siblings().children("a").removeClass("current").next().hide();
+		// 		return false;
+		// 	});
+		// });
+		$(function(){
+			$(".level1>a").click(function(){
+				$(this).addClass("current")
+				.next().show()
+				.parent().siblings().children("a").removeClass("current")
+				.next().hide();
+				return false ;
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="box">
+		<ul class="menu">
+			<li class="level1">
+				<a href="#">衬衫</a>
+				<ul class="level2">
+					<li><a href="#">衬衫a</a></li>
+					<li><a href="#">衬衫b</a></li>
+					<li><a href="#">衬衫c</a></li>
+					<li><a href="#">衬衫d</a></li>
+				</ul>
+			</li>
+			<li class="level1">
+				<a href="#">卫衣</a>
+				<ul class="level2">
+					<li><a href="#">卫衣a</a></li>
+					<li><a href="#">卫衣b</a></li>
+					<li><a href="#">卫衣c</a></li>
+					<li><a href="#">卫衣d</a></li>
+				</ul>
+			</li>
+			<li class="level1">
+				<a href="#">裤子</a>
+				<ul class="level2">
+					<li><a href="#">裤子a</a></li>
+					<li><a href="#">裤子b</a></li>
+					<li><a href="#">裤子c</a></li>
+					<li><a href="#">裤子d</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

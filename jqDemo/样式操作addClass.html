@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+	.Myclass{
+		font-style:none;
+		color:red;
+	}
+	.newClass{
+		font-style: italic;
+		color:blue;
+	}
+</style>
+<script src="script/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<p class="Myclass">bibibibibibibi</p>
+<script>
+	$(function(){
+		$("p").addClass("newClass")
+	})
+	//要注意addClass和attr的区别 
+</script>
+
+</body>
+</html>

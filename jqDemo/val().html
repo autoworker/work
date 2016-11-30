@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script src="script/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<input type="text" id="address" value="address">
+	<input type="text" id="passwords" value="passwords">
+	<input type="button" value="load">
+<script>
+	$(function(){
+		$("#address").focus(function(){
+				var txt_value=$(this).val();
+				// if(txt_value=="address"){
+				if(txt_value==this.defaultValue){
+					$(this).val("");
+				}
+		});
+		$("#address").blur(function(){
+			var  txt_value = $(this).val();
+			if(txt_value==""){
+				$(this).val("address");
+			}
+		});
+		$("#passwords").focus(function(){
+			var txt_value=$(this).val();
+			if(txt_value==this.defaultValue){
+			// if(txt_value=='passwords'){
+				$(this).val("")
+			}
+		});
+		$("#passwords").blur(function(){
+			var txt_value=$(this).val();
+			if(txt_value==''){
+				$(this).val("passwords")
+			}
+		});
+	})
+</script>
+</body>
+</html>
