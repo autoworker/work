@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="script/jquery-3.1.1.js"></script>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		div{
+			width:60px;
+			height:22px;
+			background: #f90;
+			position: absolute;
+			left:0;
+			top:0;
+		}
+	</style>
+	<script>
+		 $(function(){
+		 	jQuery.fx.off=false;
+		 	jQuery.fx.interval=10;
+		 	$('.div').hover(function(){
+		 		if(!$('.div').is(':animated')){
+		 			$(this).stop().animate({height:'150'},200)
+		 					.animate({width:'300'},300);
+		 		}
+		 	},function(){
+		 		$(this).stop().animate({height:'22'},200)
+		 				.animate({width:'60'},300);
+		 	})
+		 })
+	</script>
+</head>
+<body>
+	<div class="div"></div>
+</body>
+</html>

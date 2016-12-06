@@ -75,6 +75,8 @@ mouseleave	blur		unload
 	   		  });
 	   		});
 	stop()---方法用于在动画或效果完成前对它们进行停止----http://www.runoob.com/try/try.php?filename=tryjquery_stop_params
+	stop(true/false,true/false);-----stop(clearQueue,gotoEnd);
+	delay();   延迟动画
 	Callback---方法-Callback 函数在当前动画 100% 完成之后执行
 	Chaining方法链接---链接（chaining）的技术，允许我们在相同的元素上运行多条 jQuery 命令，一条接着另一条。
 		eg:$("#p1").css("color","red").slideUp(2000).slideDown(2000);
